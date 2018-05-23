@@ -50,8 +50,8 @@ public class VirtualPetApp {
 				}
 
 				System.out.println("Let's go out and play! Avoid that mouse trap obstacle course!");
-				pet.modifyHunger(1);
-				pet.modifySleepy(1);
+				//pet.modifyHunger(1);
+				//pet.modifySleepy(1);
 
 			}
 
@@ -71,13 +71,13 @@ public class VirtualPetApp {
 
 				System.out.println("mmmhh mmhh delicious...cheese is my favorite.");
 				// hunger -= 1 hunger goes down.
-				pet.modifyHunger(-1);
-				pet.modifySleepy(1);
+				//pet.modifyHunger(-1);
+				//pet.modifySleepy(1);
 
 			}
 
 			else if (select == 3) {// Chill and relax with pet
-				// If Boredom is at max 5.
+				// If Boredom is at max.
 
 				if (pet.getBoredom() + 1 > 6) {
 					System.out.println("I'm bored. Let's go out and Play!");
@@ -85,9 +85,9 @@ public class VirtualPetApp {
 					continue;
 				}
 
-				System.out.println("Let's pick a movie!");
+				System.out.println("Let's watch a movie!");
 				// boredom += 1 boredom goes up.
-				pet.modifyBoredom(1);
+				//pet.modifyBoredom(1);
 
 				String[] movies = new String[] { "Tom and Jerry. ", "Ratatouille ", "3 Blind Mice " };
 				// randomize the movie it picks when selected
@@ -98,8 +98,8 @@ public class VirtualPetApp {
 			else {
 				System.out.println("Invalid selection. Please select one of the numbers listed");
 			}
-
-			// pet.tick();
+//tick method
+			 pet.tick();
 
 		} while (select != 0);
 
