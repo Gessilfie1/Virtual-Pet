@@ -10,10 +10,10 @@ public class VirtualPet {
 	//constructor
 	public VirtualPet(String n) {
 		name = n;
-		sleepy = 2;
-		hunger = 2;
-		boredom = 2;
-		thirsty = 2;
+		sleepy = 3;
+		hunger = 3;
+		boredom = 3;
+		thirsty = 3;
 	}
 	//create getter methods
 	
@@ -58,6 +58,13 @@ public class VirtualPet {
 	}
 	public void modifyThirst(int t) {
 		thirsty += t;
+	}
+	//tick method to randomize game loop
+	public void tick() {
+		sleepy += 1;
+		hunger += 1;
+		boredom += 1;
+		thirsty += 1;
 	}
 	
 	
